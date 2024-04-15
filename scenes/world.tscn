@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://xl4780m6k317"]
+
+[ext_resource type="PackedScene" uid="uid://c33joy3d74h0i" path="res://scenes/player.tscn" id="1_67whf"]
+[ext_resource type="MeshLibrary" uid="uid://b3kqdvgwg8t51" path="res://assets/tile_set1.tres" id="2_dx1yc"]
+[ext_resource type="Texture2D" uid="uid://d33f8n88mqe3f" path="res://assets/galaxy_panorama_seamless_dither.png" id="3_cscvi"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_eft5x"]
+panorama = ExtResource("3_cscvi")
+
+[sub_resource type="Sky" id="Sky_ecp3a"]
+sky_material = SubResource("PanoramaSkyMaterial_eft5x")
+
+[sub_resource type="Environment" id="Environment_pip5h"]
+background_mode = 2
+background_energy_multiplier = 0.0
+sky = SubResource("Sky_ecp3a")
+ambient_light_color = Color(1, 0.980392, 0.764706, 1)
+ambient_light_sky_contribution = 0.0
+ambient_light_energy = 0.03
+fog_enabled = true
+fog_light_color = Color(1, 0.980392, 0.764706, 1)
+fog_light_energy = 0.02
+fog_density = 0.05
+
+[node name="world" type="Node"]
+
+[node name="player" parent="." instance=ExtResource("1_67whf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.75, -5)
+
+[node name="tile_map" type="GridMap" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 2.27918, 0.646897, -4.03581)
+mesh_library = ExtResource("2_dx1yc")
+cell_size = Vector3(1, 1, 1)
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(0, 65535, 1441793, 65535, 65535, 2, 65535, 0, 2, 0, 0, 1441793, 0, 1, 1441793, 65535, 1, 2, 0, 65534, 0, 65535, 65534, 1, 65534, 65534, 1048576, 65534, 65535, 1048577, 65534, 0, 1048577, 65534, 1, 1048577, 65535, 5, 2, 0, 5, 2, 0, 6, 2, 0, 7, 2, 65535, 7, 2, 65535, 6, 2, 65534, 5, 2, 65534, 6, 2, 65534, 7, 2, 1, 5, 2, 1, 6, 2, 1, 7, 2, 1, 8, 2, 0, 8, 2, 65535, 8, 2, 65534, 8, 2, 65533, 8, 2, 65533, 7, 2, 65533, 6, 2, 65533, 5, 2, 65532, 6, 1048577, 65532, 7, 1048577, 65532, 8, 1048577, 65532, 9, 655360, 65533, 9, 655361, 65534, 9, 655361, 65535, 9, 655361, 0, 9, 655361, 1, 9, 655361, 65533, 4, 1048579, 1, 4, 1, 0, 4, 1, 65532, 4, 1048576, 65532, 5, 1048577, 65534, 4, 1048578, 65535, 4, 3, 65534, 3, 1048578, 65535, 3, 1441793, 65533, 3, 1048577, 65533, 2, 1048576, 0, 2, 1441792, 65534, 2, 1048579, 65535, 2, 1441795, 2, 8, 1441793, 2, 7, 1441793, 2, 6, 1441793, 2, 5, 1441793, 2, 4, 0, 2, 9, 1441792)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="the_void" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_pip5h")

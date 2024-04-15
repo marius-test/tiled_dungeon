@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://c33joy3d74h0i"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_wc61t"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mfwyp"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ptnyc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ojrtw"]
+albedo_color = Color(1, 1, 0, 1)
+
+[node name="player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("1_wc61t")
+
+[node name="camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="collision" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_mfwyp")
+
+[node name="mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_ptnyc")
+surface_material_override/0 = SubResource("StandardMaterial3D_ojrtw")
+
+[node name="flashlight" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.5)
+light_color = Color(1, 0.980392, 0.764706, 1)
+spot_range = 10.0
+spot_angle = 70.0
