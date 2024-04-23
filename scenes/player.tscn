@@ -13,8 +13,16 @@ albedo_color = Color(1, 1, 0, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_wc61t")
 
-[node name="camera" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.778361, -0.264104)
+
+[node name="camera" type="Camera3D" parent="head"]
+
+[node name="flashlight" type="SpotLight3D" parent="head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.610217)
+light_color = Color(1, 0.980392, 0.764706, 1)
+spot_range = 10.0
+spot_angle = 70.0
 
 [node name="collision" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_mfwyp")
@@ -22,9 +30,3 @@ shape = SubResource("CapsuleShape3D_mfwyp")
 [node name="mesh" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_ptnyc")
 surface_material_override/0 = SubResource("StandardMaterial3D_ojrtw")
-
-[node name="flashlight" type="SpotLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.5)
-light_color = Color(1, 0.980392, 0.764706, 1)
-spot_range = 10.0
-spot_angle = 70.0
