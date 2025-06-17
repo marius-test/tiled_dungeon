@@ -6,4 +6,4 @@ I aim to make this into an original videogame.
 
 Tools used: Godot 4, Blender, Krita, paint.net, Laigter.
 
-This project is... !!!UNDER CONSTRUCTION!!!
+This project is... **!!!UNDER CONSTRUCTION!!!**
