@@ -33,6 +33,6 @@ This is an early-stage prototype with the goal of evolving into a fully original
 
 ### License & Copyright
 
-© 2025 Marius Briscut. All rights reserved.
+© 2025 Void Studios - Marius Briscut, Mélanie Saulo, and Paul Suatean. All rights reserved.
 
-This project, including all code, assets, and content, is the intellectual property of the authors and is protected by copyright law. Unauthorized copying, distribution, or use is prohibited without explicit permission.
+This project, including all code, assets, and content, is the intellectual property of Void Studios and its authors. Unauthorized copying, distribution, or use is prohibited without explicit permission.
