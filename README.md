@@ -20,7 +20,7 @@ This is an early-stage prototype with the goal of evolving into a fully original
 - Krita and Paint.NET (textures)  
 - Laigter (lighting)  
 
-### Planned
+### Planned features
 
 - Gameplay mechanics (combat, puzzles)  
 - Enemy AI  
