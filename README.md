@@ -1,9 +1,30 @@
 # tiled_dungeon
 
-My 3D Dungeon Crawler project in **Godot Engine 4**.
+A 3D dungeon crawler developed in **Godot Engine 4**.
 
-I aim to make this into an original videogame.
+This project uses a 3D tiling method to build a low-poly, pixelated retro-style dungeon environment. It features a walkable dungeon and mouse-look camera in first-person perspective.
 
-Tools used: Godot 4, Blender, Krita, paint.net, Laigter.
+This is an early-stage prototype with the goal of evolving into a fully original game.
 
-This project is... **!!!UNDER CONSTRUCTION!!!**
+### Features
+
+- Low-poly retro aesthetic with pixelated textures  
+- Procedural 3D tiling dungeon design  
+- First-person walkable environment  
+- Mouse look control for camera navigation  
+
+### Tools used
+
+- Godot Engine 4  
+- Blender (modeling)  
+- Krita and Paint.NET (textures)  
+- Laigter (lighting)  
+
+### Planned
+
+- Gameplay mechanics (combat, puzzles)  
+- Enemy AI  
+- Inventory and item systems  
+- Level progression and procedural generation  
+- Sound effects and music
+- Quests and story
