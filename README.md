@@ -13,7 +13,7 @@ This is an early-stage prototype with the goal of evolving into a fully original
 - First-person walkable environment  
 - Mouse look control for camera navigation  
 
-### Tools used
+### Tools
 
 - Godot Engine 4  
 - Blender (modeling)  
