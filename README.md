@@ -33,4 +33,4 @@ This is an early-stage prototype with the goal of evolving into a fully original
 
 ### License
 
-© 2025 Marius Briscut. All rights reserved. See LICENSE file for details.
+© 2025 Void Studios - Marius Briscut. All rights reserved. See LICENSE file for details.
