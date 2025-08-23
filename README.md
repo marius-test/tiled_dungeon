@@ -35,4 +35,5 @@ This is an early-stage prototype with the goal of evolving into a fully original
 
 © 2025 Void Studios - Marius Briscut. All rights reserved.
 
-This project, including all code, assets, and content, is the intellectual property of Void Studios and its authors. Unauthorized copying, distribution, or use is prohibited without explicit permission.
+This project, including all code, assets, and content, is the exclusive intellectual property of Void Studios and its authors.  
+No part of this project may be copied, distributed, modified, or used in any form without prior written permission.
