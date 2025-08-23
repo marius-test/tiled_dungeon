@@ -31,9 +31,6 @@ This is an early-stage prototype with the goal of evolving into a fully original
 
 ---
 
-### License & Copyright
+### License
 
-© 2025 Void Studios - Marius Briscut. All rights reserved.
-
-This project, including all code, assets, and content, is the exclusive intellectual property of Void Studios and its authors.  
-No part of this project may be copied, distributed, modified, or used in any form without prior written permission.
+© 2025 Marius Briscut. All rights reserved. See LICENSE file for details.
